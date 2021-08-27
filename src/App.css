@@ -1,10 +1,9 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -24,15 +23,108 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.table-tr {
+  border-bottom: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-table {
+  padding: 20px;
+  border-spacing: 10px;
+  margin: 20px 10px 0px 10px;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 600px;
+  border: solid 2px black;
+  height: min-content;
+}
+
+.table-td {
+  padding: 5px;
+  border: black solid 1px;
+}
+
+.table-th {
+  margin-bottom: 10px;
+}
+
+.search-box {
+  padding: 20px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1920px;
+  min-width: 600px;
+}
+.search-box__form {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.search-box__form-label {
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-box__form-label-p {
+  margin: 0px;
+  min-width: 190px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.search-box__form-textarea {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 500px;
+  min-width: 300px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  resize: none;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.search-box__form-submit {
+  margin-left: 20px;
+}
+
+.main-box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-area-selection {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  padding: 2px;
+  z-index: -1;
+  max-width: 380px;
+  min-width: 380px;
+  border: solid 1px black;
+  color: rgb(231, 89, 89);
+  height: 20px;
+  overflow-x: hidden;
+}
+
+.id-invalid {
+  text-decoration: underline;
+}
+
+.id-valid {
+  color: rgba(139, 127, 127, 0.623);
 }
